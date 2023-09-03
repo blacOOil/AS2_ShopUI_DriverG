@@ -35,11 +35,11 @@ public class ItemInfo : MonoBehaviour
     }
 
     public void Buy() {
-
+        ItemInfoUIOut();
     }
 
     public void Cancel() {
-
+        ItemInfoUIOut();
     }
 
     public void ESCButton() {
