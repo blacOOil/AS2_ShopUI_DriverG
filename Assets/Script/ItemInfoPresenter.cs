@@ -15,39 +15,39 @@ namespace Inventory.ItemInfoPresenter
         public TextMeshProUGUI ItemTextName,ItemTextInfo;
 
         public static ItemInfoPresenter Instance;
-        public List<Item> Items = new List<Item>();
-       // [SerializeField] public Text UItext;
+        //public List<Item> Items = new List<Item>();
+        // [SerializeField] public Text UItext;
 
         [SerializeField]
         public Transform ItemContent;
         [SerializeField]
-        public GameObject ShopItemPrefab;
+        public GameObject ItemPrefab;
       
       
         public void Start()
         {
-            ListItemInfo();
+            //ListItemInfo();
+            List<Item> items = FindObjectOfType<Inventory.ItemPresenter.ItemPresenter>().Items;
+            ListItemInfo(items);
         }
         private void Awake()
         {
         }
 
-
-        public void ListItemInfo()
+        public void ListItemInfo(List<Item> items)
         {
 
-            foreach (var item in Items)
+            foreach (var item in items)
             {
-            GameObject itemUi = Instantiate(ShopItemPrefab, ItemContent);
+            GameObject itemUi = Instantiate(ItemPrefab, ItemContent);
 
                 itemUi.transform.Find("InfoImage").GetComponent<Image>().sprite = item.Icon;
-                ItemTextInfo = itemUi.transform.Find("InfoItem").GetComponent<TextMeshProUGUI>();
-                ItemTextInfo.text = item.ItemInfo;
-
                 ItemTextName = itemUi.transform.Find("InfoItemName").GetComponent<TextMeshProUGUI>();
                 ItemTextName.text = item.ItemName;
+
+                ItemTextInfo = itemUi.transform.Find("InfoItem").GetComponent<TextMeshProUGUI>();
+                ItemTextInfo.text = item.ItemInfo;
               
-                
           
             }
 

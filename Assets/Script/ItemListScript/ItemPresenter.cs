@@ -48,8 +48,6 @@ namespace Inventory.ItemPresenter
           
             }
 
-
-
         }
 
     }

@@ -336,7 +336,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: InfoText
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -888,14 +888,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemTextName: {fileID: 3685492352180879393}
   ItemTextInfo: {fileID: 4337922119410571909}
-  Items:
-  - Icon: {fileID: -1940859256, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
-    ItemName: Blue Book
-    ItemInfo: book
-    Amount: 2
-    type: 0
   ItemContent: {fileID: 5693604312040022925}
-  ShopItemPrefab: {fileID: 6369286656415662867}
+  ItemPrefab: {fileID: 6369286656415662867}
+  ItemInfoTextPrefab: {fileID: 2085612533056565614}
+  ItemInfoNamePrefab: {fileID: 6505104809581085206}
 --- !u!1 &6505104809581085206
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,7 +958,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: InfoName
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
