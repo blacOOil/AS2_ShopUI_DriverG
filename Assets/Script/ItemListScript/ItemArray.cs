@@ -3,19 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-namespace Inventory.ItemArray
+namespace Inventory.ItemPresenter
 {
     public class ItemArray : MonoBehaviour
     { 
-        [SerializeField]
- 
-        List<Item> Items = new List<Item>();
- 
-        void start()
-         {
-          
-         }
-      
+        public Item[] Items1 => Items.ToArray();
+        [SerializeField] List<Item> Items = new List<Item>();
+
+        public Item[] GetItemsByType(ItemType targetType)
+        {
+            var resultlist = new List<Item>();
+            foreach(var Item in Items)
+            {
+                if(Item.type == targetType)
+                {
+                    if(Item.type == targetType)
+                        resultlist.Add(Item);
+                    
+                } 
+            }
+            return resultlist.ToArray();
+        }     
     }
   
     [System.Serializable]
@@ -31,7 +39,11 @@ namespace Inventory.ItemArray
     }
     public enum ItemType
     {
-        Weapon,Heal,resource,Gem,CharacterStar
+        Weapon,
+        Heal,
+        Resource,
+        Gem,
+        CharacterStar
     }
 
 
