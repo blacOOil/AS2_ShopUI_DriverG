@@ -7,8 +7,9 @@ namespace Inventory.ItemArray
 {
     public class ItemArray : MonoBehaviour
     { 
-        public List<Item> Items = new List<Item>();
         [SerializeField]
+ 
+        List<Item> Items = new List<Item>();
  
         void start()
          {

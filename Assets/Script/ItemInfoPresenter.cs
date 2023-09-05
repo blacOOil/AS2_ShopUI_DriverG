@@ -7,14 +7,14 @@ using Inventory.ItemData;
 using TMPro;
 
 
-namespace Inventory.ItemInfoPresenter
+namespace Inventory.ItemPresenter
 {
 
     public class ItemInfoPresenter : MonoBehaviour
     {
         public TextMeshProUGUI ItemTextName,ItemTextInfo;
 
-        public static ItemInfoPresenter Instance;
+        //public static ItemInfoPresenter Instance;
         //public List<Item> Items = new List<Item>();
         // [SerializeField] public Text UItext;
 
@@ -27,7 +27,8 @@ namespace Inventory.ItemInfoPresenter
         public void Start()
         {
             //ListItemInfo();
-            List<Item> items = FindObjectOfType<Inventory.ItemPresenter.ItemPresenter>().Items;
+            List<Item> items = FindObjectOfType<ItemPresenter>().Items;
+            Debug.Log("Number of items in the list: " + items.Count);
             ListItemInfo(items);
         }
         private void Awake()
@@ -39,7 +40,12 @@ namespace Inventory.ItemInfoPresenter
 
             foreach (var item in items)
             {
-            GameObject itemUi = Instantiate(ItemPrefab, ItemContent);
+                GameObject itemUi = Instantiate(ItemPrefab, ItemContent);
+                itemUi.SetActive(true);
+
+                Debug.Log("InfoImage: " + itemUi.transform.Find("InfoImage"));
+                Debug.Log("InfoItemName: " + itemUi.transform.Find("InfoItemName"));
+                Debug.Log("InfoItem: " + itemUi.transform.Find("InfoItem"));
 
                 itemUi.transform.Find("InfoImage").GetComponent<Image>().sprite = item.Icon;
                 ItemTextName = itemUi.transform.Find("InfoItemName").GetComponent<TextMeshProUGUI>();

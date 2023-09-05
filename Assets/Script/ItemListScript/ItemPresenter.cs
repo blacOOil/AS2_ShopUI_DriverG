@@ -30,6 +30,7 @@ namespace Inventory.ItemPresenter
         }
         private void Awake()
         {
+            
         }
 
 
