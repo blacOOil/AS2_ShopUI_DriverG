@@ -40,12 +40,12 @@ namespace Inventory.ItemPresenter
 
             foreach (var item in items)
             {
-                GameObject itemUi = Instantiate(ItemPrefab, ItemContent);
-                itemUi.SetActive(true);
+                var itemUi = Instantiate(ItemPrefab, ItemContent);
+                itemUi.gameObject.SetActive(true);
 
-                Debug.Log("InfoImage: " + itemUi.transform.Find("InfoImage"));
-                Debug.Log("InfoItemName: " + itemUi.transform.Find("InfoItemName"));
-                Debug.Log("InfoItem: " + itemUi.transform.Find("InfoItem"));
+                // Debug.Log("InfoImage: " + itemUi.transform.Find("InfoImage"));
+                // Debug.Log("InfoItemName: " + itemUi.transform.Find("InfoItemName"));
+                // Debug.Log("InfoItem: " + itemUi.transform.Find("InfoItem"));
 
                 itemUi.transform.Find("InfoImage").GetComponent<Image>().sprite = item.Icon;
                 ItemTextName = itemUi.transform.Find("InfoItemName").GetComponent<TextMeshProUGUI>();

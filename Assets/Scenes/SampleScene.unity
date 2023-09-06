@@ -261,6 +261,7 @@ GameObject:
   - component: {fileID: 232313312}
   - component: {fileID: 232313313}
   - component: {fileID: 232313314}
+  - component: {fileID: 232313315}
   m_Layer: 0
   m_Name: ShopManager
   m_TagString: Untagged
@@ -368,6 +369,69 @@ MonoBehaviour:
   ItemTextInfo: {fileID: 491767800}
   ItemContent: {fileID: 398812076}
   ItemPrefab: {fileID: 7807070209738874044}
+--- !u!114 &232313315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232313308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0226d857c145f6e448efe01e2982d007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Items:
+  - Icon: {fileID: -1940859256, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
+    ItemName: Blue Book
+    ItemInfo: book
+    Amount: 2
+    type: 0
+  - Icon: {fileID: -1172587905, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
+    ItemName: Golden Chest
+    ItemInfo: golden chest
+    Amount: 3
+    type: 2
+  - Icon: {fileID: -201948882, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
+    ItemName: Potion
+    ItemInfo: Heal
+    Amount: 1
+    type: 1
+  - Icon: {fileID: -1015555760, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
+    ItemName: Green Gem
+    ItemInfo: to upgrade character
+    Amount: 4
+    type: 3
+  - Icon: {fileID: 1774025196, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
+    ItemName: Two-Handed Axe
+    ItemInfo: Weaponnnnnnn
+    Amount: 1
+    type: 0
+  - Icon: {fileID: -1407862177, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
+    ItemName: Green Book
+    ItemInfo: book
+    Amount: 2
+    type: 0
+  - Icon: {fileID: 1670203979, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
+    ItemName: Black Potion
+    ItemInfo: Heal
+    Amount: 3
+    type: 1
+  - Icon: {fileID: 303135804, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
+    ItemName: Big Red Gem
+    ItemInfo: to upgrade ...
+    Amount: 20
+    type: 3
+  - Icon: {fileID: 1725580441, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
+    ItemName: Blue Star
+    ItemInfo: to upgrade Character
+    Amount: 2
+    type: 4
+  - Icon: {fileID: -598320734, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
+    ItemName: Purple Star
+    ItemInfo: to upgrade Character
+    Amount: 7
+    type: 4
 --- !u!1 &369047991
 GameObject:
   m_ObjectHideFlags: 0

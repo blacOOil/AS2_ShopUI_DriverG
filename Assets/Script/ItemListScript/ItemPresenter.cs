@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-//using Inventory.ItemArray;
-using Inventory.ItemData;
 using TMPro;
 
 
@@ -120,7 +118,6 @@ namespace Inventory.ItemPresenter
                         item.type = ItemType.CharacterStar;
                         break;
                     default:
-                        // Handle any other cases or set a default category
                         break;
                 }
             }
