@@ -19,9 +19,9 @@ namespace Inventory.ItemPresenter
         // [SerializeField] public Text UItext;
 
         [SerializeField]
-        public Transform ItemContent;
+        public Transform ItemInfoContent;
         [SerializeField]
-        public GameObject ItemPrefab;
+        public GameObject ItemInfoPrefab;
       
       
         public void Start()
@@ -33,6 +33,7 @@ namespace Inventory.ItemPresenter
         }
         private void Awake()
         {
+
         }
 
         public void ListItemInfo(List<Item> items)
@@ -40,13 +41,14 @@ namespace Inventory.ItemPresenter
 
             foreach (var item in items)
             {
-                var itemUi = Instantiate(ItemPrefab, ItemContent);
+                GameObject itemUi = Instantiate(ItemInfoPrefab, ItemInfoContent);
+             
                 itemUi.gameObject.SetActive(true);
 
                 // Debug.Log("InfoImage: " + itemUi.transform.Find("InfoImage"));
                 // Debug.Log("InfoItemName: " + itemUi.transform.Find("InfoItemName"));
                 // Debug.Log("InfoItem: " + itemUi.transform.Find("InfoItem"));
-
+                
                 itemUi.transform.Find("InfoImage").GetComponent<Image>().sprite = item.Icon;
                 ItemTextName = itemUi.transform.Find("InfoItemName").GetComponent<TextMeshProUGUI>();
                 ItemTextName.text = item.ItemName;

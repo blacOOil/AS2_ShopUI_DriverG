@@ -13,7 +13,7 @@ public class ButtonInfo : MonoBehaviour
     public GameObject ShopManager;
     void Start()
     {
-        MoneySell.text = "Gem : " + ShopManager.GetComponent<ShopManagerscript>().shopItem[2,ItemName].ToString();
-        Amount.text = ShopManager.GetComponent<ShopManagerscript>().shopItem[3,ItemName].ToString();
+   //     MoneySell.text = "Gem : " + ShopManager.GetComponent<ShopManagerscript>().shopItem[2,ItemName].ToString();
+     //   Amount.text = ShopManager.GetComponent<ShopManagerscript>().shopItem[3,ItemName].ToString();
     }
 }

@@ -9,6 +9,7 @@ namespace Inventory.ItemPresenter
     { 
         public Item[] Items1 => Items.ToArray();
         [SerializeField] List<Item> Items = new List<Item>();
+      
 
         public Item[] GetItemsByType(ItemType targetType)
         {
@@ -19,6 +20,7 @@ namespace Inventory.ItemPresenter
                 {
                     if(Item.type == targetType)
                         resultlist.Add(Item);
+                       
                     
                 } 
             }
@@ -29,11 +31,11 @@ namespace Inventory.ItemPresenter
     [System.Serializable]
     public class Item
     {
-
+        
         public Sprite Icon;
         public string ItemName;
         public string ItemInfo;
-        public float Amount;
+        public float Price;
         public ItemType type;
      
     }

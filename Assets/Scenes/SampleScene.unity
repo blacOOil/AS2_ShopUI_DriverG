@@ -123,6 +123,141 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &68764663
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 68764664}
+  - component: {fileID: 68764666}
+  - component: {fileID: 68764665}
+  m_Layer: 5
+  m_Name: Money
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &68764664
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68764663}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 931851124}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 321, y: 200}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &68764665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68764663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278195402
+  m_fontColor: {r: 0.7924528, g: 0.07994285, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &68764666
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68764663}
+  m_CullTransparentMesh: 1
 --- !u!1 &194092900
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,7 +295,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000030517578, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &194092902
@@ -206,8 +341,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1533243381}
   m_HandleRect: {fileID: 1533243380}
   m_Direction: 2
-  m_Value: 0.9999999
-  m_Size: 0.41717088
+  m_Value: 1
+  m_Size: 0.40170002
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -262,6 +397,7 @@ GameObject:
   - component: {fileID: 232313313}
   - component: {fileID: 232313314}
   - component: {fileID: 232313315}
+  - component: {fileID: 232313316}
   m_Layer: 0
   m_Name: ShopManager
   m_TagString: Untagged
@@ -277,7 +413,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 232313308}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -671.6338, y: -369.4045, z: 9.748317}
+  m_LocalPosition: {x: -299, y: -369.4045, z: 9.748317}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -303,52 +439,52 @@ MonoBehaviour:
   - Icon: {fileID: -1940859256, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Blue Book
     ItemInfo: book
-    Amount: 2
+    Price: 122
     type: 0
   - Icon: {fileID: -1172587905, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Golden Chest
     ItemInfo: golden chest
-    Amount: 3
+    Price: 400
     type: 2
   - Icon: {fileID: -201948882, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Potion
     ItemInfo: Heal
-    Amount: 1
+    Price: 45
     type: 1
   - Icon: {fileID: -1015555760, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Green Gem
     ItemInfo: to upgrade character
-    Amount: 4
+    Price: 75
     type: 3
   - Icon: {fileID: 1774025196, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Two-Handed Axe
     ItemInfo: Weaponnnnnnn
-    Amount: 1
+    Price: 775
     type: 0
   - Icon: {fileID: -1407862177, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Green Book
     ItemInfo: book
-    Amount: 2
+    Price: 58
     type: 0
   - Icon: {fileID: 1670203979, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Black Potion
     ItemInfo: Heal
-    Amount: 3
+    Price: 56
     type: 1
   - Icon: {fileID: 303135804, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Big Red Gem
     ItemInfo: to upgrade ...
-    Amount: 20
+    Price: 78
     type: 3
   - Icon: {fileID: 1725580441, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Blue Star
     ItemInfo: to upgrade Character
-    Amount: 2
+    Price: 46
     type: 4
   - Icon: {fileID: -598320734, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Purple Star
     ItemInfo: to upgrade Character
-    Amount: 7
+    Price: 52
     type: 4
   inventory: {fileID: 0}
   ItemContent: {fileID: 398812076}
@@ -367,8 +503,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemTextName: {fileID: 916463026}
   ItemTextInfo: {fileID: 491767800}
-  ItemContent: {fileID: 398812076}
-  ItemPrefab: {fileID: 7807070209738874044}
+  ItemInfoContent: {fileID: 0}
+  ItemInfoPrefab: {fileID: 7807070209738874044}
 --- !u!114 &232313315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,53 +521,68 @@ MonoBehaviour:
   - Icon: {fileID: -1940859256, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Blue Book
     ItemInfo: book
-    Amount: 2
+    Price: 122
     type: 0
   - Icon: {fileID: -1172587905, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Golden Chest
     ItemInfo: golden chest
-    Amount: 3
+    Price: 400
     type: 2
   - Icon: {fileID: -201948882, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Potion
     ItemInfo: Heal
-    Amount: 1
+    Price: 45
     type: 1
   - Icon: {fileID: -1015555760, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Green Gem
     ItemInfo: to upgrade character
-    Amount: 4
+    Price: 75
     type: 3
   - Icon: {fileID: 1774025196, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Two-Handed Axe
     ItemInfo: Weaponnnnnnn
-    Amount: 1
+    Price: 775
     type: 0
   - Icon: {fileID: -1407862177, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Green Book
     ItemInfo: book
-    Amount: 2
+    Price: 58
     type: 0
   - Icon: {fileID: 1670203979, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Black Potion
     ItemInfo: Heal
-    Amount: 3
+    Price: 56
     type: 1
   - Icon: {fileID: 303135804, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Big Red Gem
     ItemInfo: to upgrade ...
-    Amount: 20
+    Price: 78
     type: 3
   - Icon: {fileID: 1725580441, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Blue Star
     ItemInfo: to upgrade Character
-    Amount: 2
+    Price: 46
     type: 4
   - Icon: {fileID: -598320734, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Purple Star
     ItemInfo: to upgrade Character
-    Amount: 7
+    Price: 52
     type: 4
+--- !u!114 &232313316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232313308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f8003c3c526a4643a16edf478e30527, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopItem: []
+  Gem: 1000
+  GemTXT: {fileID: 68764665}
 --- !u!1 &369047991
 GameObject:
   m_ObjectHideFlags: 0
@@ -1619,6 +1770,7 @@ RectTransform:
   - {fileID: 1707014923}
   - {fileID: 1506769566}
   - {fileID: 232313312}
+  - {fileID: 68764664}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3313,23 +3465,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1412105925768719443, guid: 52073d1966a52f24c8ec28556a5cb680, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3964755130685297770, guid: 52073d1966a52f24c8ec28556a5cb680, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3964755130685297770, guid: 52073d1966a52f24c8ec28556a5cb680, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3964755130685297770, guid: 52073d1966a52f24c8ec28556a5cb680, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 263.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3964755130685297770, guid: 52073d1966a52f24c8ec28556a5cb680, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -367.2354
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972736631285621891, guid: 52073d1966a52f24c8ec28556a5cb680, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972736631285621891, guid: 52073d1966a52f24c8ec28556a5cb680, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972736631285621891, guid: 52073d1966a52f24c8ec28556a5cb680, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 232313316}
+    - target: {fileID: 3972736631285621891, guid: 52073d1966a52f24c8ec28556a5cb680, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972736631285621891, guid: 52073d1966a52f24c8ec28556a5cb680, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Buy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972736631285621891, guid: 52073d1966a52f24c8ec28556a5cb680, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ShopManagerscript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972736631285621891, guid: 52073d1966a52f24c8ec28556a5cb680, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5268859405803855895, guid: 52073d1966a52f24c8ec28556a5cb680, type: 3}
       propertyPath: m_Pivot.x
@@ -3397,11 +3577,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5268859405803855895, guid: 52073d1966a52f24c8ec28556a5cb680, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 671.6338
+      value: 306
       objectReference: {fileID: 0}
     - target: {fileID: 5268859405803855895, guid: 52073d1966a52f24c8ec28556a5cb680, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 369.40448
+      value: 361
       objectReference: {fileID: 0}
     - target: {fileID: 5268859405803855895, guid: 52073d1966a52f24c8ec28556a5cb680, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3421,19 +3601,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9209714255040875503, guid: 52073d1966a52f24c8ec28556a5cb680, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9209714255040875503, guid: 52073d1966a52f24c8ec28556a5cb680, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9209714255040875503, guid: 52073d1966a52f24c8ec28556a5cb680, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 536.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9209714255040875503, guid: 52073d1966a52f24c8ec28556a5cb680, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -367.2354
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52073d1966a52f24c8ec28556a5cb680, type: 3}

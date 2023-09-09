@@ -5,6 +5,7 @@ using UnityEngine;
 public class ItemInfo : MonoBehaviour
 {
     public static bool ItemInfoIsPaused = false;
+  
     public GameObject itemInfoUI;
 
     // Update is called once per frame
@@ -35,6 +36,7 @@ public class ItemInfo : MonoBehaviour
     }
 
     public void Buy() {
+
         ItemInfoUIOut();
     }
 
