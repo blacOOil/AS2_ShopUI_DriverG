@@ -12,7 +12,7 @@ namespace Inventory.ItemPresenter
 
     public class ItemInfoPresenter : MonoBehaviour
     {
-        public TextMeshProUGUI ItemTextName,ItemTextInfo;
+        public TextMeshProUGUI ItemTextName,ItemTextInfo,ItemPrice;
 
         //public static ItemInfoPresenter Instance;
         //public List<Item> Items = new List<Item>();
@@ -55,8 +55,10 @@ namespace Inventory.ItemPresenter
 
                 ItemTextInfo = itemUi.transform.Find("InfoItem").GetComponent<TextMeshProUGUI>();
                 ItemTextInfo.text = item.ItemInfo;
-              
-          
+
+                ItemPrice = itemUi.transform.Find("ITEMPRICE").GetComponent<TextMeshProUGUI>();
+               ItemPrice.text = item.Price.ToString();
+
             }
 
         }

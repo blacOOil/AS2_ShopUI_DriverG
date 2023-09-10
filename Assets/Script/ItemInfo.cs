@@ -14,7 +14,7 @@ public class ItemInfo : MonoBehaviour
             ItemInfoUIIn();
             //Debug.Log("ItemInfo Pop-up");
         } else {
-            ItemInfoUIOut();
+           // ItemInfoUIOut();
             //Debug.Log("ItemInfo Pop-down");
         }
 
