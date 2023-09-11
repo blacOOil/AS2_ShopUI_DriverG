@@ -441,51 +441,61 @@ MonoBehaviour:
     ItemInfo: book
     Price: 122
     type: 0
+    order: 0
   - Icon: {fileID: -1172587905, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Golden Chest
     ItemInfo: golden chest
     Price: 400
     type: 2
+    order: 1
   - Icon: {fileID: -201948882, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Potion
     ItemInfo: Heal
     Price: 45
     type: 1
+    order: 2
   - Icon: {fileID: -1015555760, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Green Gem
     ItemInfo: to upgrade character
     Price: 75
     type: 3
+    order: 3
   - Icon: {fileID: 1774025196, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Two-Handed Axe
     ItemInfo: Weaponnnnnnn
     Price: 775
     type: 0
+    order: 4
   - Icon: {fileID: -1407862177, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Green Book
     ItemInfo: book
     Price: 58
     type: 0
+    order: 5
   - Icon: {fileID: 1670203979, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Black Potion
     ItemInfo: Heal
     Price: 56
     type: 1
+    order: 6
   - Icon: {fileID: 303135804, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Big Red Gem
     ItemInfo: to upgrade ...
     Price: 78
     type: 3
+    order: 7
   - Icon: {fileID: 1725580441, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Blue Star
     ItemInfo: to upgrade Character
     Price: 46
     type: 4
+    order: 8
   - Icon: {fileID: -598320734, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Purple Star
     ItemInfo: to upgrade Character
     Price: 52
     type: 4
+    order: 9
   inventory: {fileID: 0}
   ItemContent: {fileID: 398812076}
   ShopItemPrefab: {fileID: 794797987}
@@ -524,51 +534,61 @@ MonoBehaviour:
     ItemInfo: book
     Price: 122
     type: 0
+    order: 0
   - Icon: {fileID: -1172587905, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Golden Chest
     ItemInfo: golden chest
     Price: 400
     type: 2
+    order: 1
   - Icon: {fileID: -201948882, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Potion
     ItemInfo: Heal
     Price: 45
     type: 1
+    order: 2
   - Icon: {fileID: -1015555760, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Green Gem
     ItemInfo: to upgrade character
     Price: 75
     type: 3
+    order: 3
   - Icon: {fileID: 1774025196, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Two-Handed Axe
     ItemInfo: Weaponnnnnnn
     Price: 775
     type: 0
+    order: 4
   - Icon: {fileID: -1407862177, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Green Book
     ItemInfo: book
     Price: 58
     type: 0
+    order: 5
   - Icon: {fileID: 1670203979, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Black Potion
     ItemInfo: Heal
     Price: 56
     type: 1
+    order: 6
   - Icon: {fileID: 303135804, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Big Red Gem
     ItemInfo: to upgrade ...
     Price: 78
     type: 3
+    order: 7
   - Icon: {fileID: 1725580441, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Blue Star
     ItemInfo: to upgrade Character
     Price: 46
     type: 4
+    order: 8
   - Icon: {fileID: -598320734, guid: 8595f2416f1f73c4ebd8713099c87e69, type: 3}
     ItemName: Purple Star
     ItemInfo: to upgrade Character
     Price: 52
     type: 4
+    order: 9
 --- !u!114 &232313316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3200,7 +3220,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 475, y: -60.000015}
+  m_AnchoredPosition: {x: 427, y: -69}
   m_SizeDelta: {x: 620.5429, y: 349.0554}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1982132639
@@ -3210,7 +3230,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1982132637}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -3729,6 +3749,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7400821802829567124, guid: 52073d1966a52f24c8ec28556a5cb680, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7819455291241113143, guid: 52073d1966a52f24c8ec28556a5cb680, type: 3}
       propertyPath: m_Type
       value: 1
@@ -3767,7 +3791,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 7807070209738874042}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7807070209738874044}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d6464f4cd1cb3148a59183e041d2f3d, type: 3}
   m_Name: 

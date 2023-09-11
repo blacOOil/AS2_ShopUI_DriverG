@@ -39,8 +39,10 @@ namespace Inventory.ItemPresenter
         public void ListItemInfo(List<Item> items)
         {
 
-            foreach (var item in items)
+            if (items.Count > 0)
             {
+                int ItemOrder = 0;
+                var item = items[ItemOrder];
                 GameObject itemUi = Instantiate(ItemInfoPrefab, ItemInfoContent);
              
                 itemUi.gameObject.SetActive(true);
@@ -57,7 +59,8 @@ namespace Inventory.ItemPresenter
                 ItemTextInfo.text = item.ItemInfo;
 
                 ItemPrice = itemUi.transform.Find("ITEMPRICE").GetComponent<TextMeshProUGUI>();
-               ItemPrice.text = item.Price.ToString();
+                ItemPrice.text = item.Price.ToString();
+
 
             }
 

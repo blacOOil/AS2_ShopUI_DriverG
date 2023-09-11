@@ -6,13 +6,15 @@ using TMPro;
 namespace Inventory.ItemPresenter
 {
     public class ItemArray : MonoBehaviour
-    { 
+    {
+        
         public Item[] Items1 => Items.ToArray();
         [SerializeField] List<Item> Items = new List<Item>();
       
 
         public Item[] GetItemsByType(ItemType targetType)
         {
+
             var resultlist = new List<Item>();
             foreach(var Item in Items)
             {
@@ -20,7 +22,7 @@ namespace Inventory.ItemPresenter
                 {
                     if(Item.type == targetType)
                         resultlist.Add(Item);
-                       
+                        
                     
                 } 
             }
@@ -37,6 +39,7 @@ namespace Inventory.ItemPresenter
         public string ItemInfo;
         public float Price;
         public ItemType type;
+        public int order;
      
     }
     public enum ItemType
